@@ -1,12 +1,32 @@
-# React + Vite
+# Sistema de Control de Empleados – Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Frontend en **React + Vite** para el sistema de control de empleados. Consume la API backend desplegada en Render.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Despliegue
 
-## Expanding the ESLint configuration
+- **Frontend:**  
+  [https://control-empleados-frontend.vercel.app](https://control-empleados-frontend.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Backend asociado:**  
+  [https://control-empleados-backend.onrender.com](https://control-empleados-backend.onrender.com)
+
+---
+
+## 📦 Instalación local
+
+1. **Clonar repositorio:**
+   ```sh
+   git clone https://github.com/xavcue/control-empleados-frontend.git
+   cd control-empleados-frontend
+
+Instalar dependencias:
+npm install
+
+Configura la URL del backend:
+Crea el archivo .env:
+VITE_API_URL=https://control-empleados-backend.onrender.com
+
+Ejecutar en desarrollo:
+npm run dev
