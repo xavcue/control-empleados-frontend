@@ -1,0 +1,187 @@
+/* Centrado de TODA la página */
+.dashboard-outer {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #171a1e; /* un gris oscuro elegante */
+}
+
+/* Contenedor de todo el contenido */
+.dashboard-container {
+  background: rgba(20, 22, 30, 0.99);
+  border-radius: 18px;
+  box-shadow: 0 4px 32px 0 #0009;
+  padding: 40px 32px;
+  max-width: 1100px;
+  width: 100%;
+  min-height: 700px;
+  margin: 36px 0;
+}
+
+/* Títulos principales */
+.dashboard-title {
+  font-size: 2.7rem;
+  font-weight: 900;
+  color: #07d9ff;
+  letter-spacing: -2px;
+  margin-bottom: 22px;
+  text-shadow: 0 1px 2px #0005;
+}
+
+.dashboard-section-title {
+  color: #08e0e5;
+  margin-top: 38px;
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 800;
+  text-shadow: 0 1px 2px #0007;
+}
+
+.dashboard-divider {
+  border: none;
+  height: 1.5px;
+  background: #3aefff33;
+  margin: 34px 0;
+}
+
+/* Tablas y cabeceras */
+.dashboard-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #1c1e2c;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 18px;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  padding: 14px 10px;
+  text-align: left;
+  font-size: 1.15rem;
+}
+
+.dashboard-table th {
+  background: #232545;
+  color: #07d9ff;
+  font-weight: 800;
+  border-bottom: 2px solid #202042;
+}
+
+.dashboard-table tr {
+  border-bottom: 1px solid #22263b;
+}
+
+.dashboard-table tr:last-child {
+  border-bottom: none;
+}
+
+.dashboard-table td {
+  color: #fff;
+  background: #191a24;
+}
+
+.dashboard-edit-row td {
+  background: #1a265a !important;
+}
+
+/* Inputs y forms */
+.dashboard-input {
+  width: 95%;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background: #202533;
+  border: 1.5px solid #233a4d;
+  color: #f4f9ff;
+  font-size: 1rem;
+  margin-bottom: 3px;
+  outline: none;
+  transition: border 0.18s;
+}
+.dashboard-input:focus {
+  border: 1.5px solid #07d9ff;
+}
+
+.dashboard-form,
+.dashboard-form-empleado {
+  margin: 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #191c25;
+  border-radius: 9px;
+  padding: 18px 10px;
+}
+
+.dashboard-form-empleado {
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard-form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 13px;
+  max-width: 330px;
+}
+
+/* Botones PRO */
+.dashboard-btn {
+  background: linear-gradient(90deg, #07d9ff 0%, #12c2e9 100%);
+  color: #191a1e;
+  border: none;
+  border-radius: 7px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 10px 22px;
+  margin-right: 4px;
+  margin-top: 2px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px 0 #1113;
+  transition: background 0.18s, color 0.13s, transform 0.14s;
+}
+.dashboard-btn:active {
+  transform: scale(0.98);
+}
+.dashboard-btn-cancel {
+  background: #393a3e !important;
+  color: #fff !important;
+}
+.dashboard-btn-delete {
+  background: #ff324d !important;
+  color: #fff !important;
+}
+
+/* Logout */
+.dashboard-logout {
+  background: #232535;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  float: right;
+  margin-top: -60px;
+  margin-right: 8px;
+  box-shadow: 0 1px 5px #0005;
+  transition: background 0.15s;
+}
+.dashboard-logout:hover {
+  background: #07d9ff;
+  color: #1c1e2c;
+}
+
+/* Loading */
+.dashboard-loading {
+  text-align: center;
+  color: #07d9ff;
+  font-size: 2.2rem;
+  margin-top: 150px;
+  font-weight: 700;
+}
