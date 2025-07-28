@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8080';
+// Usa la variable de entorno (funciona en local si tienes .env con VITE_API_URL)
+const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:8080';
 
 const api = axios.create({
   baseURL: API_URL,
@@ -76,3 +77,5 @@ export const updateMiPerfil = async (datos) => {
   const res = await api.put('/empleados/me', datos);
   return res.data;
 };
+
+export default api;
